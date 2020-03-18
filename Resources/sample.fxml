@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="294.0" prefWidth="224.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <top>
+      <GridPane prefHeight="284.0" prefWidth="224.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="127.0" minHeight="0.0" prefHeight="66.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="267.0" minHeight="0.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="303.0" minHeight="10.0" prefHeight="114.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="303.0" minHeight="10.0" prefHeight="108.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="helloWorld" text="Unesite n:" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ulaz" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="50.0" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+            <TextArea fx:id="izlaz" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+               <font>
+                  <Font size="16.0" />
+               </font></TextArea>
+            <Button fx:id="button" mnemonicParsing="false" onAction="#Izvrsi" text="Submit" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </GridPane>
+   </top>
+</BorderPane>
